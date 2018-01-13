@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Installing Twitter Bot"
 cd /home/pi/projects
 mkdir Twitter_Bot

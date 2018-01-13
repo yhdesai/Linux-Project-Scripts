@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Installing Home Assistant"
+cd /home/pi/projects
+mkdir home_assistant
+cd home_assistant
+sudo apt-get install python3-pip python3-venv
+python3 -m venv homeassistant
+cd homeassistant
+source bin/activate
+sudo python3 -m pip install homeassistant
+echo "Home Assistant has been installed"
+echo "To start the homeassistant, execute this command"
+echo "hass --open-ui"

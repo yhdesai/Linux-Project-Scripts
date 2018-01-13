@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Installing minecraft client"
 cd /home/pi/projects
 mkdir minecraft_client

@@ -6,7 +6,8 @@ choice=99
  echo "1) Update System"
  echo "2. Ad Blocker"
  echo "3 Twitter Bot"
- echo "4. Minecraft Server"
+ echo "4. Minecraft Client"
+ echo "5. Minecraft Server"
  echo -n "Please choose a number? "
 # Loop while the variable choice is equal 99
 # bash while loop
@@ -25,8 +26,14 @@ else if [ $choice -eq 2 ] ; then
 else if [ $choice -eq 3 ] ; then
   sh scripts/twitter-bot
 
-  else if [ $choice -eq 4 ] ; then
-    sh scripts/minecraft-server
+else if [ $choice -eq 4 ] ; then
+  sh scripts/minecraft-client
+
+else if [ $choice -eg 5 ] ; then
+  sh scripts/minecraft-server
+
+else if [ $choice -eq 6 ] ; then
+  sh scripts/home-assistant
 
 # If something else is selected, Show the choice options again
         else

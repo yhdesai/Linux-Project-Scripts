@@ -1,0 +1,12 @@
+echo "Installing minecraft client"
+cd /home/pi/projects
+mkdir minecraft_client
+cd minecraft_client
+wget https://s3.amazonaws.com/assets.minecraft.net/pi/minecraft-pi-0.1.1.tar.gz
+tar -zxvf minecraft-pi-0.1.1.tar.gz
+cd mcpi
+echo "Minecraft Client has been installed"
+echo "Would you like to play the game now?"
+read option
+if [option = y]
+./minecraft-pi

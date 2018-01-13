@@ -1,0 +1,11 @@
+echo "Installing Minecraft Server"
+cd /home/pi/projects
+mkdir minecraft_server
+cd minecraft_server
+wget https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/minecraft_server.1.12.2.jar
+echo "minecraft server file downloaded"
+java -jar minecraft_server.1.12.2.jar
+echo "You need to accept the terms"
+nano eula.txt
+echo "starting the server"
+java -jar minecraft_server.1.12.2.jar

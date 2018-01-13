@@ -1,0 +1,9 @@
+echo "Installing Twitter Bot"
+cd /home/pi/projects
+mkdir Twitter_Bot
+cd Twitter_Bot
+sudo apt-get install npm -y
+npm init
+npm install --save twit request
+cd
+echo "Twitter bot has been installed"

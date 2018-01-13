@@ -1,0 +1,3 @@
+echo "Installing Ad Blocker"
+curl -sSL https://install.pi-hole.net | bash
+echo "Ad blocker has been installed"

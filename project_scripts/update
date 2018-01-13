@@ -1,0 +1,8 @@
+echo "Updating Pi"
+echo "executing apt-get update"
+sudo apt-get update
+echo "Executing apt-get upgrade"
+sudo apt-get upgrade -y
+echo "Executing apt-get dist-upgrade"
+sudo apt-get dist-upgrade -y
+echo "Your system is up to date"

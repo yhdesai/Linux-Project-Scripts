@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Installing Amazon Alexa"
+cd /home/pi/projects
+git clone https://github.com/alexa/alexa-avs-sample-app.git
+mv alexa-avs-sample-app amazon_alexa
+cd amazon_alexa
+echo "Add creds here"
+nano automated_install.sh
+echo "configuring and installing some software"
+. automated_install.sh
+echo "running AWS"
+cd samples
+cd companionService && npm start
+cd ..
+echo "run the sample app"
+cd samples
+cd javaclient && mvn exec:exec
+echo "Start the wake word engine"
+cd wakeWordAgent/src && ./wakeWordAgent -e kitt_ai
+echo "Alexa has been installed"

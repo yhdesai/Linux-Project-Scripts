@@ -10,7 +10,7 @@ choice=99
  echo "5. Minecraft Server"
  echo -n "Please choose a number? "
 # Loop while the variable choice is equal 99
-# bash while loop
+ bash while loop
 while [ $choice -eq 99 ]; do
 
 # read user input
@@ -46,4 +46,4 @@ else if [ $choice -eq 6 ] ; then
            fi
         fi
 fi
-done
+

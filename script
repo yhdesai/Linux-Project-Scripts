@@ -8,8 +8,9 @@ choice=99
  echo "3 Twitter Bot"
  echo "4. Minecraft Client"
  echo "5. Minecraft Server"
- echo "6. Home Assistant".
- echo "7.. Amazon Alexa"
+ echo "6. Home Assistant"
+ echo "7. Amazon Alexa"
+ echo "8. Tor"
  echo -n "Please choose a number? "
 # Loop while the variable choice is equal 99
  #bash while loop
@@ -47,6 +48,9 @@ else if [ $choice -eq 7 ] ; then
   cd project_scripts
   sh amazon-alexa
 
+else if [ $choice -eq 8 ] ; then
+  cd project_scripts
+  sh tor
 
 
 # If something else is selected, Show the choice options again
